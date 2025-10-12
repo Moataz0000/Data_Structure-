@@ -14,6 +14,7 @@ This repository contains implementations of various data structures in Python. T
         - isEmpty: Checks if the stack is empty.
         - Size: Finds the number of elements in the stack.
 
+        - **Example implementation:** [stack.py](./stack.py)
 
 
 
