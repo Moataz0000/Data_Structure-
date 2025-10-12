@@ -6,6 +6,8 @@ This repository contains implementations of various data structures in Python. T
 - Stack
 
 
+
+
 - **Stack** is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
     > Think of it like a stack of pancakes - you can only add or remove pancakes from the top.
     
