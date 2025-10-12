@@ -2,7 +2,8 @@
 
 This repository contains implementations of various data structures in Python. The goal is to provide clear, well-documented examples of fundamental data structures used in computer science.
 
-## Current Implementations
+## Data Structure
+- Stack
 
 - **Stack** is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
     > Think of it like a stack of pancakes - you can only add or remove pancakes from the top.
