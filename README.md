@@ -16,19 +16,6 @@ This repository contains implementations of various data structures in Python. T
 
 
 
-## Features
-
-- Clean and readable Python code
-- Documentation for each data structure
-- Example usage for each implementation
-
-## Getting Started
-
-To use these implementations, simply clone the repository and import the desired data structure into your Python project.
-
-```python
-from stack import Stack  # Example import
-```
 
 ## Contributing
 
