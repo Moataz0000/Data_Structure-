@@ -5,7 +5,8 @@ This repository contains implementations of various data structures in Python. T
 ## Current Implementations
 
 - **Stack** is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
-    - You can only add or remove pancakes from the top.
+    > Think of it like a stack of pancakes - you can only add or remove pancakes from the top.
+    
     - Basic operations we can do on a stack are:
         - Push: Adds a new element on the stack.
         - Pop: Removes and returns the top element from the stack.
