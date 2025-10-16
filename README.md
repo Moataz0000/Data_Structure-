@@ -5,7 +5,7 @@ This repository contains implementations of various data structures in Python. T
 ## Included Data Structures
 - Stack
 
----
+--- 
 
 
 
