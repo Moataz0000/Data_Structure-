@@ -38,14 +38,3 @@ class Stack:
 
 stack = Stack()
 
-print(stack.size())
-
-stack.push(1)
-stack.push(2)
-
-print(stack.size())
-# print(stack.pop())
-print(stack.size())
-
-print(stack.peek())
-
