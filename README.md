@@ -4,6 +4,7 @@ This repository contains implementations of various data structures in Python. T
 
 ## Included Data Structures
 - Stack
+- Queue
 
 --- 
 
@@ -20,6 +21,18 @@ This repository contains implementations of various data structures in Python. T
         - Size: Finds the number of elements in the stack.
 
         - **Example implementation:** [stack.py](./stack.py)
+
+- **Queue** is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+    > Think of it like a line at a coffee shop - the first person in line is the first to be served.
+    
+    - Basic operations we can do on a queue are:
+        - Enqueue: Adds a new element to the rear of the queue.
+        - Dequeue: Removes and returns the front element from the queue.
+        - Front: Returns the front element without removing it.
+        - isEmpty: Checks if the queue is empty.
+        - Size: Finds the number of elements in the queue.
+
+        - **Example implementation:** [_queue.py](./_queue.py)
 
 
 
