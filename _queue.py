@@ -25,7 +25,7 @@ class Queue:
     def dequeue(self) -> None:
         if self.is_empty():
             return self.message
-        return self.queue.pop(0)
+        return self.queue.popleft()
 
     def is_empty(self) -> bool:
         return len(self.queue) == 0
@@ -37,7 +37,7 @@ class Queue:
         return len(self.queue)
 
 
-queue = Queue()
+
 
 
 

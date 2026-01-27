@@ -1,5 +1,5 @@
 from typing import Any
-
+from collections import deque
 
 class Graph:
     def __init__(self):
@@ -26,17 +26,38 @@ class Graph:
         """Shows the graph structure."""
         for node, neighbors in self.adj_list.items():
             print(f"{node}: {neighbors}")
+
+
+    def bfs(self, start_node: Any):
+        if start_node not in self.adj_list:
+            print("Start node not found!")
+            return 
+        
+        visited: set = set()
+        queue: deque = deque([start_node])
+        visited.add(start_node)
+
+        print(f"BFS starting from {start_node}:", end=" ")
+
+        while queue:
+            current_node = queue.popleft()
+            print(current_node, end=" ")
+        for neighbor in self.adj_list[current_node]:
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append(neighbor)
+        print()
     
 
 graph = Graph()
-
-
 graph.add_node("A")
 graph.add_node("B")
 graph.add_node("C")
+graph.add_node("D")
 
-graph.add_edge(node1="A", node2="B")
-graph.add_edge(node1="B", node2="C")
+graph.add_edge("A", "B")
+graph.add_edge("A", "C")
+graph.add_edge("B", "D")
 
-
-graph.display()
+graph.bfs("A") 
+# Output: BFS starting from A: A B C D
