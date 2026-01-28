@@ -1,9 +1,6 @@
 
 """
-A good thing about Linked Lists 
-is that when inserting or 
-removing a node, other elements 
-do not have to be  in memory.
+A good thing about Linked Lists is that when inserting or removing a node, other elements do not have to be  in memory.
 """
 
 class Node:
@@ -31,8 +28,20 @@ def find_lowest_value(head):
     return min_value
 
 
+def delete_node(head, node):
+    if head == node:
+        return head.next 
+    
+    current_node = head
+    while current_node.next and current_node.next != node:
+        current_node = current_node.next 
 
+    if current_node.next is None:
+        return head
+    
+    current_node.next = current_node.next.next
 
+    return head
 
 
 node1 = Node(1)
@@ -46,4 +55,10 @@ node3.next = node4
 
 
 traverse(node1)
-print(f'The lowest value in the linked list is: {find_lowest_value(node1)}')
+# print(f'The lowest value in the linked list is: {find_lowest_value(node1)}')
+
+# delete node 4
+delete_node(node1, node4)
+delete_node(node1, node3)
+
+traverse(node1)
